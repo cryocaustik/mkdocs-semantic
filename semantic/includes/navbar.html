@@ -1,0 +1,38 @@
+<div id="navbar" class="ui top fixed menu">
+    {%- if config.logo_url %}
+        <a href="{{ config.site_url }}" id="logo" class="item">
+            <img src="{{ config.logo_url }}" alt="{{ config.site_name }} Logo Alt" class="ui middle aligned image" height="40px">
+        </a>
+    {%- endif %}
+    <div class="item">
+        {{ config.site_name }}
+    </div>
+    <div id="breadcrumbs-cont" class="item">
+        <div class="ui breadcrumb">
+            {%- if page.ancestors %}
+                <a class="section" href="{{ nav.homepage.url|url }}">{{ nav.homepage.title }}</a>
+            {%- else %}
+                <div class="section active">{{ nav.homepage.title }}</div>
+            {%- endif %}
+            {%- if page %}
+                {%- for section in page.ancestors %}
+                    {%- if section.link %}
+                        / <a class="section" href="{{ section.link|e }}">{{ section.title }}</a>
+                    {%- else %}
+                        / <div class="section">{{ section.title }}</div>
+                    {%- endif %}
+                {%- endfor %}
+            {%- endif %}
+            {%- if page.ancestors %}
+                / <div class="section active">{{ page.title }}</div>
+            {%- endif %}    
+        </div>
+    </div>
+    <div class="right menu">
+        <div class="item">
+            <div id="search-btn" class="medium icons">
+                <i class="bordered search icon"></i>
+            </div>
+        </div>
+    </div>
+</div>

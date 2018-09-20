@@ -1,0 +1,4 @@
+__pycache__/
+mkdocs_semantic.egg-info/
+build/
+dist/

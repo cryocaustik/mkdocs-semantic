@@ -1,0 +1,84 @@
+$navbar-height: 4.5rem
+$navbar-push: $navbar-height + 1rem
+
+
+// color
+$black: #000000
+
+$clr-font: rgba(255,255,255,0.5)
+
+#content
+    padding-top: $navbar-push
+    h1, h2, h3, h4, h5
+        cursor: default
+        padding-top: $navbar-push
+        margin-top: -$navbar-push
+        .headerlink
+            cursor: pointer
+            color: transparent
+            &:hover
+                color: rgba(30,30,30, 0.2)
+
+img
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    max-width: 100%
+    background-color: transparent
+    border: 1px solid rgba(0, 0, 0, 0.1)
+
+
+#navbar
+    height: $navbar-height
+    z-index: 999
+
+    #search-btn
+        cursor: pointer
+    
+    #breadcrumbs-cont
+        &:before
+            background-color: transparent
+
+
+#sidebar
+    padding-top: $navbar-height
+    border-radius: 0
+    overflow-y: auto
+
+    .item
+        color: $clr-font
+        border-radius: 0
+        
+    .item:hover
+        background-color: inherit
+        color: rgba($clr-font, 1)
+    .item.active
+        background-color: inherit
+
+#sidebar-btn
+    position: fixed
+    top: 4.5em
+    left: 0px
+    width: 45px
+    height: auto
+    white-space: nowrap
+    overflow: hidden
+    transition: 0.3s width ease, 0.5s transform ease
+
+    &:hover
+        width: 130px
+        .text
+            opacity: 1
+    .text
+        position: absolute
+        white-space: nowrap
+        top: auto
+        left: 54px
+        opacity: 0
+        transition: 0.3s opacity 0.3s
+
+
+#footer-attribution
+    margin-top: 5rem
+    padding-top: 1rem
+    padding-bottom: 1rem

@@ -1,0 +1,8 @@
+# Config options for 'semantic' theme
+
+semantic_theme: true
+static_templates:
+    - 404.html
+
+highlightjs: true
+hljs_style: vs2015

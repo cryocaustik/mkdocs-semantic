@@ -1,0 +1,18 @@
+<div id="sidebar" class="ui inverted sidebar vertical menu">
+    {% for nav_item in nav %}
+        {% if nav_item.children %}
+            <div class="item">
+                <div class="header{% if nav_item.active %} active{% endif %}">{{ nav_item.title }}</div>
+                {% for nav_item in nav_item.children %}
+                    {% include "includes/sidebar-subitem.html" %}
+                {% endfor %}
+            </div>
+        {% else %}
+            <a href="{{ base_url }}" class="item {% if nav_item.active %} active{% endif %}">{{ nav_item.title }}</a>
+        {% endif %}
+    {% endfor %}
+</div>
+<div id="sidebar-btn" class="ui black big launch right attached fixed button">
+    <i class="content icon"></i>
+    <span class="text">Menu</span>
+</div>
