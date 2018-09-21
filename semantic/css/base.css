@@ -42,7 +42,7 @@ img {
 #sidebar {
   padding-top: 4.5rem;
   border-radius: 0;
-  overflow-y: auto;
+  overflow-y: visible !important;
 }
 
 #sidebar .item {
