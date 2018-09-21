@@ -15,7 +15,7 @@
                 <div class="section active">{{ nav.homepage.title }}</div>
             {%- endif %}
             {%- if page %}
-                {%- for section in page.ancestors %}
+                {%- for section in page.ancestors|reverse %}
                     {%- if section.link %}
                         / <a class="section" href="{{ section.link|e }}">{{ section.title }}</a>
                     {%- else %}
