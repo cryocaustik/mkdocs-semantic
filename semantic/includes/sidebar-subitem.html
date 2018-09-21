@@ -7,7 +7,7 @@
         <div class="header {%- if nav_item.active %} active{%- endif %}">{{ nav_item.title }}</div>
         <div class="menu">
             {%- for nav_item in nav_item.children %}
-                {%- include "sidebar-subitem.html" %}
+                {%- include "includes/sidebar-subitem.html" %}
             {%- endfor %}
         </div>
     </div>
