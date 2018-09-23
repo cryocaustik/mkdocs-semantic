@@ -1,7 +1,7 @@
 <div id="navbar" class="ui top fixed menu">
     {%- if config.logo_url %}
         <a href="{{ config.site_url }}" id="logo" class="item">
-            <img src="{{ config.logo_url }}" alt="{{ config.site_name }} Logo Alt" class="ui middle aligned image" height="40px">
+            <img src="{{ config.logo_url|url }}" alt="404 -" class="ui middle aligned image" height="40px">
         </a>
     {%- endif %}
     <div class="item">
