@@ -2,10 +2,29 @@
   padding-top: 5.5rem;
 }
 
+#content hr {
+  margin: 1rem 0rem;
+  line-height: 1;
+  height: 0em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
 #content h1, #content h2, #content h3, #content h4, #content h5 {
   cursor: default;
   padding-top: 5.5rem;
   margin-top: -5.5rem;
+}
+
+#content h1:hover .headerlink, #content h2:hover .headerlink, #content h3:hover .headerlink, #content h4:hover .headerlink, #content h5:hover .headerlink {
+  color: rgba(30, 30, 30, 0.2);
 }
 
 #content h1 .headerlink, #content h2 .headerlink, #content h3 .headerlink, #content h4 .headerlink, #content h5 .headerlink {

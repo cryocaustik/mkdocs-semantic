@@ -9,10 +9,27 @@ $clr-font: rgba(255,255,255,0.5)
 
 #content
     padding-top: $navbar-push
+    hr
+        margin: 1rem 0rem
+        line-height: 1
+        height: 0em
+        text-transform: uppercase
+        letter-spacing: 0.05em
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        border: none
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15)
+
     h1, h2, h3, h4, h5
         cursor: default
         padding-top: $navbar-push
         margin-top: -$navbar-push
+        &:hover
+            .headerlink
+                color: rgba(30,30,30, 0.2)
         .headerlink
             cursor: pointer
             color: transparent
