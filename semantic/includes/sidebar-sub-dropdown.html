@@ -1,19 +1,27 @@
 {%- if not nav_item.children %}
-    <a href="{{ nav_item.url|url }}" class="item{%- if nav_item.active %} active{%- endif %}">
-        {{ nav_item.title }}
-    </a>
+<a
+  href="{{ nav_item.url | url }}"
+  class="item{%- if nav_item.active %} active{%- endif %}"
+>
+  {{ nav_item.title }}
+</a>
 {%- else %}
-    <div class="ui dropdown item"
-        {%- if nav_item.active %}
-        style="color: #fff !important"
-        {%- endif %}
-        >
-        <i class="dropdown icon"></i>
-        {{ nav_item.title }}
-        <div class="menu">
-            {%- for nav_item in nav_item.children %}
-                {%- include "includes/sidebar-sub-dropdown.html" %}
-            {%- endfor %}
-        </div>
-    </div>
+<div
+  class="ui dropdown item"
+  {%-
+  if
+  nav_item.active
+  %}
+  style="color: #fff !important"
+  {%-
+  endif
+  %}
+>
+  <i class="dropdown icon"></i>
+  {{ nav_item.title }}
+  <div class="menu">
+    {%- for nav_item in nav_item.children %} {%- include
+    "includes/sidebar-sub-dropdown.html" %} {%- endfor %}
+  </div>
+</div>
 {%- endif %}

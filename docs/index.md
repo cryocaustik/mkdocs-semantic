@@ -22,9 +22,56 @@ theme: semantic
 ```
 <br/>
 
-## Custom Config Variables
+## Configuration
 
-- `logo_url`: if specified, will be used in the navbar before the site name
+Theme customizations options
+
+### Logo
+
+The default logo is the Python icon from Semantic-UI, however it can be overidden using an image or an icon.
+
+To use an image, specify the URL or relative path to the image:
+
+```yaml
+theme:
+  logo:
+    image: 'images/logo.png'
+```
+
+To use an icon, specify the name of a [Semantic-UI icon](https://semantic-ui.com/elements/icon.html):
+
+```yaml
+theme:
+  logo:
+    icon: 'python'
+```
+
+### Breadcrumbs
+
+The breadcrumbs are enabled by default, but can be disabled through the breadcrumb variable:
+
+```yaml
+theme:
+  breadcrumb: false
+```
+
+### Sidebar
+
+The sidebar is enabled by default, but can be disabled through the sidebar variable:
+
+```yaml
+theme:
+  sidebar: false
+```
+
+### Search
+
+The search functionality is enabled by default (adding a search icon to the navbar), but can be disabled through the search variable:
+
+```yaml
+theme:
+  search: false
+```
 
 <br/>
 

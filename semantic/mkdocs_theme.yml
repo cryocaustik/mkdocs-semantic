@@ -2,7 +2,11 @@
 
 semantic_theme: true
 static_templates:
-    - 404.html
+  - 404.html
+
+breadcrumbs: true
+sidebar: true
+search: true
 
 highlightjs: true
 hljs_style: vs2015

@@ -3,18 +3,20 @@ site_url: https://github.com/cryocaustik/mkdocs-semantic
 site_description: Minimalistic [Semantic-UI](https://semantic-ui.com/) theme for [MkDocs](https://www.mkdocs.org/) with a focus on web content.
 site_author: https://github.com/cryocaustik
 
-logo_url: https://vgy.me/hQUu8u.png
-
 theme:
   name: semantic
-
+  logo:
+    image: https://vgy.me/hQUu8u.png
+    icon: book
+  # sidebar: false
+  # search: false
 
 nav:
   - Read Me: index.md
 
 markdown_extensions:
   - toc:
-      permalink: '#'
+      permalink: "#"
   - pymdownx.tasklist
 plugins:
   - search
