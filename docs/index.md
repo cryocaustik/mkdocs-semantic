@@ -81,9 +81,12 @@ theme:
 - [highlight.js >= 9.12.0](https://highlightjs.org/)
 - [jQuery >= 3.3.1](https://jquery.com/)
 
+## Source
+
+[Github](https://github.com/cryocaustik/mkdocs-semantic)
+
 <br/>
 
 ## Project Road Map
 
-- [ ] setup demo site 
-- [ ] develop doc-focused variant of theme
+- [ ] add toc

@@ -12,7 +12,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
     name="mkdocs-semantic",
     version=VERSION,
-    url='https://github.com/cryocaustik/mkdocs-semantic',
+    url='http://mkdocs-semantic.alexskobelev.com/',
     license='MIT',
     description='Semantic-UI Theme for MkDocs',
     long_description=long_description,
