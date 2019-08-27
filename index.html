@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="https://github.com/cryocaustik" />
+    <meta name="description" content="Minimalistic [Semantic-UI](https://semantic-ui.com/) theme for [MkDocs](https://www.mkdocs.org/) with a focus on web content." />
+    <link
+      rel="shortcut icon"
+      href="https://github.com/cryocaustik/mkdocs-semantic/img/favicon.ico"
+    />
+
+    <title>Read Me -mkdocs-semantic
+    </title>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- ./jquery -->
+
+    <!-- semantic-ui -->
+    <link rel="stylesheet" href="css/semantic.css" />
+    <script src="js/semantic.js"></script>
+    <!-- ./semantic-ui -->
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="css/vs2015.min.css" />
+    <script src="js/highlight.min.js"></script>
+    <!-- ./highlight.js -->
+
+    <!-- mkdocs-semantic -->
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="js/base.js"></script>
+    <!-- ./mkdocs-semantic -->
+
+    <!-- css-header -->
+    <!-- ./css-header -->
+
+    <script>
+      var base_url = "."
+    </script>
+
+    <!-- js-header -->
+    <!-- ./js-header -->
+  </head>
+  <body>
+    <!-- navbar --><div id="navbar" class="ui top fixed menu">
+  <a href="https://github.com/cryocaustik/mkdocs-semantic" id="logo" class="item">
+    <img
+      src="https://vgy.me/hQUu8u.png"
+      alt="404 -"
+      class="ui middle aligned image"
+      height="40px"
+    />
+  </a>
+  <div class="item">
+    mkdocs-semantic
+  </div>
+  <div class="right menu">
+    
+    <div class="item">
+      <div id="search-btn" class="medium icons">
+        <i class="bordered search icon"></i>
+      </div>
+    </div>
+    
+  </div>
+</div>
+    <!-- ./navbar -->
+    <!-- sidebar --><div id="sidebar" class="ui inverted sidebar vertical menu">
+   
+  <a
+    href="."
+    class="item  active"
+    >Read Me</a
+  >
+   
+</div>
+<div id="sidebar-btn" class="ui black big launch right attached fixed button">
+  <i class="content icon"></i>
+  <span class="text">Menu</span>
+</div>
+    <!-- ./sidebar -->
+
+    <div class="pusher">
+      <div id="content" class="ui container">
+        <!-- content -->
+        
+        <h1 id="mkdocs-semantic">mkdocs-semantic<a class="headerlink" href="#mkdocs-semantic" title="Permanent link">#</a></h1>
+<p>Minimalistic <a href="https://semantic-ui.com/">Semantic-UI</a> theme for <a href="https://www.mkdocs.org/">MkDocs</a> with a focus on web content.</p>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">#</a></h2>
+<p><a href="img/mkdocs-semantic.png"><img alt="mkdocs-semantic" src="img/mkdocs-semantic.png" /></a></p>
+<p><br/></p>
+<h2 id="installation-usage">Installation &amp; Usage<a class="headerlink" href="#installation-usage" title="Permanent link">#</a></h2>
+<pre><code class="python"># using local terminal
+pip install mkdocs-semantic
+</code></pre>
+
+<pre><code class="yml"># in your mkdocs.yml file
+theme: semantic
+</code></pre>
+
+<p><br/></p>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">#</a></h2>
+<p>Theme customizations options</p>
+<h3 id="logo">Logo<a class="headerlink" href="#logo" title="Permanent link">#</a></h3>
+<p>The default logo is the Python icon from Semantic-UI, however it can be overidden using an image or an icon.</p>
+<p>To use an image, specify the URL or relative path to the image:</p>
+<pre><code class="yaml">theme:
+  logo:
+    image: 'images/logo.png'
+</code></pre>
+
+<p>To use an icon, specify the name of a <a href="https://semantic-ui.com/elements/icon.html">Semantic-UI icon</a>:</p>
+<pre><code class="yaml">theme:
+  logo:
+    icon: 'python'
+</code></pre>
+
+<h3 id="sidebar">Sidebar<a class="headerlink" href="#sidebar" title="Permanent link">#</a></h3>
+<p>The sidebar is enabled by default, but can be disabled by through the sidebar variable:</p>
+<pre><code class="yaml">theme:
+  sidebar: false
+</code></pre>
+
+<h3 id="search">Search<a class="headerlink" href="#search" title="Permanent link">#</a></h3>
+<p>The search functionality is enabled by default (adding a search icon to the navbar), but can be disabled through the search variable:</p>
+<pre><code class="yaml">theme:
+  search: false
+</code></pre>
+
+<p><br/></p>
+<h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://semantic-ui.com/">Semantic-UI &gt;= 2.4</a></li>
+<li><a href="https://highlightjs.org/">highlight.js &gt;= 9.12.0</a></li>
+<li><a href="https://jquery.com/">jQuery &gt;= 3.3.1</a></li>
+</ul>
+<p><br/></p>
+<h2 id="project-road-map">Project Road Map<a class="headerlink" href="#project-road-map" title="Permanent link">#</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> setup demo site </li>
+<li class="task-list-item"><input type="checkbox" disabled/> develop doc-focused variant of theme</li>
+</ul>
+        
+        <!-- ./content -->
+      </div>
+    </div>
+
+    
+    <!-- search-modal --><div
+  class="ui longer modal"
+  id="mkdocs_search_modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="Search Modal"
+  aria-hidden="false"
+>
+  <i class="close icon"></i>
+  <div class="ui center aligned icon header">
+    <i class="circular search icon"></i>
+    <h2>mkdocs-semantic - Search</h2>
+    From here you can search the entire site by typing in the form below.
+  </div>
+  <div class="content">
+    <form class="ui form">
+      <div class="field">
+        <input
+          type="text"
+          name="q"
+          placeholder="Search..."
+          id="mkdocs-search-query"
+        />
+      </div>
+    </form>
+  </div>
+  <div id="mkdocs-search-results" class="scrolling content"></div>
+</div>
+    <!-- ./search-modal -->
+    
+
+    <footer>
+      <!-- attributions -->
+      <div id="footer-attribution" class="ui container">
+        <h4 class="ui horizontal divider header">
+          <div class="icons">
+            Made with <i class="fitted violet heart icon"></i> using
+            <a
+              class="ui tiny violet header"
+              href="https://www.mkdocs.org/"
+              target="_blank"
+            >
+              MkDocs
+            </a>
+            &
+            <a href="https://www.python.org/" target="_blank">
+              <i class="fitted link violet python icon"></i>
+            </a>
+          </div>
+        </h4>
+      </div>
+      <!-- ./attributions -->
+
+      <!-- css-footer -->
+      <!-- ./css-footer -->
+      <!-- js-footer -->
+      <script src="search/main.js"></script>
+      <!-- ./js-footer -->
+      <!--
+        MkDocs version : 1.0.4
+        Build Date UTC : 2019-08-27 07:45:59
+        -->
+    </footer>
+  </body>
+</html>
