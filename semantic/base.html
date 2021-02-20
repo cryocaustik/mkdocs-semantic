@@ -56,9 +56,11 @@
     <!-- ./js-header -->
   </head>
   <body>
-    <!-- navbar -->
-    {%- include "includes/navbar.html" %}
-    <!-- ./navbar -->
+    {% block navbar %}
+      <!-- navbar -->
+      {%- include "includes/navbar.html" %}
+      <!-- ./navbar -->
+    {% endblock %}
 
     {%- if config.theme.sidebar %}
     <!-- sidebar -->
