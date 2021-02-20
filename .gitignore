@@ -3,3 +3,4 @@ mkdocs_semantic.egg-info/
 build/
 dist/
 site/
+.idea/
