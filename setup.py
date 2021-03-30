@@ -12,13 +12,13 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
     name="mkdocs-semantic",
     version=VERSION,
-    url='http://mkdocs-semantic.alexskobelev.com/',
+    url='http://mkdocs-semantic.alazy.dev/',
     license='MIT',
     description='Semantic-UI Theme for MkDocs',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='https://github.com/cryocaustik',
-    author_email='cryocaustik@gmail.com',
+    author_email='alex@alazy.dev',
     packages=find_packages(),
     include_package_data=True,
     entry_points={
